@@ -11,7 +11,7 @@ class DeployCommand extends Command
 
     public function handle()
     {
-        $scriptPath = config('deploy.script_path');
+        $scriptPath = base_path('deploy.sh');
         if (!file_exists($scriptPath)) {
             $this->error('Deploy script not found!');
             return 1;
