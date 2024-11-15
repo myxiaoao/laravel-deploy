@@ -1,0 +1,27 @@
+{
+  "name": "cooper/laravel-deploy",
+  "description": "A Laravel package for deploying Laravel projects using a shell script.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Cooper\\LaravelDeploy\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Cooper",
+      "email": "myxiaoao@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "^10.0|^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Cooper\\LaravelDeploy\\DeployServiceProvider"
+      ]
+    }
+  }
+}
